@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aircraft Charge Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Aircraft Route Charges Calculator</h1>
+      <form id="charge-form">
+        <label for="aircraft">Select Aircraft Type:</label>
+        <select id="aircraft">
+          <!-- Domestic Nigerian Airlines -->
+          <option value="10" data-international="false">OverLand Airways (10 tons) - Domestic</option>
+          <option value="15" data-international="false">Airpeace (15 tons) - Domestic</option>
+          <option value="20" data-international="false">Green Afrika C (20 tons) - Domestic</option>
+          <option value="25" data-international="false">Dana Air (25 tons) - Domestic</option>
+          <option value="30" data-international="false">Arik Air (30 tons) - Domestic</option>
+          <option value="35" data-international="false">Ibom Air (35 tons) - Domestic</option>
+          <option value="40" data-international="false">Azman Air (40 tons) - Domestic</option>
+          <option value="45" data-international="false">Max Air (45 tons) - Domestic</option>
+          <option value="50" data-international="false">Air Peace (50 tons) - Domestic</option>
+        
+          <!-- International Airlines -->
+          <option value="55" data-international="true">Ethiopian Airlines (25 tons) - International</option>
+          <option value="60" data-international="true">Delta Airlines (30 tons) - International</option>
+          <option value="65" data-international="true">KLM Royal Dutch (35 tons) - International</option>
+          <option value="70" data-international="true">British Airways (40 tons) - International</option>
+          <option value="75" data-international="true">Qatar Airways (45 tons) - International</option>
+          <option value="80" data-international="true">Emirates Airlines (50 tons) - International</option>
+          <option value="85" data-international="true">Singapore Airlines (55 tons) - International</option>
+          <option value="90" data-international="true">American Airlines (60 tons) - International</option>
+          <option value="95" data-international="true">Turkish Airlines (65 tons) - International</option>
+          <option value="100" data-international="true">Air France (70 tons) - International</option>
+        </select>
+
+        <label for="distance">Enter Route Distance (in km):</label>
+        <input
+          type="number"
+          id="distance"
+          placeholder="Enter distance in kilometers"
+          required
+        />
+
+        <button type="button" id="calculate-btn">Calculate Charges</button>
+      </form>
+
+      <div id="result"></div>
+
+      <footer>
+        <p>
+          <strong
+            >This simple project was developed by AGBOOLA VINCENT, an Industrial
+            Mathematics student from the Federal University of Technology,
+            Akure, who completed their I.T. at the Ibadan Airport, Oyo State,
+            Nigeria.</strong
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
